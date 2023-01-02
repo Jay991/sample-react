@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 function convert(input) {
   const lines = input.split('\n');
   let output = 'email,name,attributes\n';
@@ -19,17 +17,7 @@ function convert(input) {
   return output;
 }
 
-fs.readFile('input.csv', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  const output = convert(data);
-  fs.writeFile('output.csv', output, 'utf8', err => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log('Conversion complete');
-  });
-});
+module.exports = {
+  convert: convert
+};
+
