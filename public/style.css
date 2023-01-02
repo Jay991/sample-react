@@ -1,0 +1,26 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #13233a;
+  color: #fff;
+}
+
+input[type="file"] {
+  background-color: #0d1516;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+button {
+  background-color: #1f6feb;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
